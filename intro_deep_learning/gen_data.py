@@ -6,3 +6,7 @@ import os, time, sys #Pythonからシステムにアクセスする関数, タ�
 key = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 secret = "xxxxxxxxxxxxxxxxxxxxx"
 wait_time = 1 #リクエストを発行するインターバル
+
+#クローリングしたファイル群を保存するフォルダーを指定
+animalname = sys.argv[1] #コマンドラインで2番目の引数を取得
+savedir = "./" + animalname#引数で与えた単語名でフォルダーを作成
