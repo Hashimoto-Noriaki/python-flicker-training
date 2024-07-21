@@ -26,3 +26,10 @@ result = flickr.photos.search(
 
 # 検索結果から写真データを取り出し、ダウンロード
 photos = result['photos']
+
+for i, photo in enumerate(photos['photo']):
+    url_q = photo['url_q']#photoオブジェクトからダウンロードURLを取得
+    filepath = savedir + '/' + photo['id'] + '.jpg'#ファイル名をフルパスで生成
+    if os.path.exists(filepath): continue#ファイルがあれば次へ
+    urlretrieve(url_q,filepath)#ファイルダウンロードを実行
+    time.sleep(wait_time)#サーバー負荷を考慮して1秒あける
