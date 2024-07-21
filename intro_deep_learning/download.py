@@ -5,8 +5,8 @@ import time
 import sys
 
 # APIキーとシークレットを設定
-key = "37a0c5ae6a8a36efdb23877f0e1bef68"
-secret = "f42043b3391b29dc"
+key = "#####"
+secret = "######"
 wait_time = 1  # リクエストを発行するインターバル
 
 # コマンドラインから取得したキーワードで保存ディレクトリを作成
