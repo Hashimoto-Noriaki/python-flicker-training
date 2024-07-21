@@ -6,3 +6,6 @@ import os, time, sys #Pythonからシステムにアクセスする関数, タ�
 key = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 secret = "xxxxxxxxxxxxxxxxxxxxx"
 wait_time = 1 #リクエストを発行するインターバル
+
+animalname = sys.argv[1] #コマンドラインで2番目の引数を取得
+savedir = "./" + animalname#引数で与えた単語名でフォルダーを作成
